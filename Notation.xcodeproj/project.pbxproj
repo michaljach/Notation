@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30C392CE14CEBD30001CA581 /* top_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392CD14CEBD30001CA581 /* top_bar.png */; };
-		30C392D014CEBD8A001CA581 /* notation_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392CF14CEBD8A001CA581 /* notation_logo.png */; };
-		30C392D214CEBE2A001CA581 /* save_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392D114CEBE2A001CA581 /* save_button.png */; };
-		30C392D414CEBF61001CA581 /* cancelbuttton.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392D314CEBF61001CA581 /* cancelbuttton.png */; };
-		30C392D614CEBF8D001CA581 /* NSText_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392D514CEBF8D001CA581 /* NSText_bg.png */; };
-		30C392DC14CEC578001CA581 /* statusimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392DB14CEC578001CA581 /* statusimg.png */; };
 		30C392E014CED14C001CA581 /* statusimg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392DF14CED14C001CA581 /* statusimg2.png */; };
+		30C392E214CED1A8001CA581 /* statusimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392E114CED1A8001CA581 /* statusimg.png */; };
+		30C392E814CED27F001CA581 /* cancelbuttton.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392E314CED27F001CA581 /* cancelbuttton.png */; };
+		30C392E914CED27F001CA581 /* notation_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392E414CED27F001CA581 /* notation_logo.png */; };
+		30C392EA14CED27F001CA581 /* NSText_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392E514CED27F001CA581 /* NSText_bg.png */; };
+		30C392EB14CED27F001CA581 /* save_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392E614CED27F001CA581 /* save_button.png */; };
+		30C392EC14CED27F001CA581 /* top_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392E714CED27F001CA581 /* top_bar.png */; };
 		30C68E8C14CD80DB00F646FB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C68E8B14CD80DB00F646FB /* Cocoa.framework */; };
 		30C68E9614CD80DB00F646FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30C68E9414CD80DB00F646FB /* InfoPlist.strings */; };
 		30C68E9814CD80DB00F646FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C68E9714CD80DB00F646FB /* main.m */; };
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		30C392CD14CEBD30001CA581 /* top_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = top_bar.png; path = "../../../Różne pierdoły/Notation img/top_bar.png"; sourceTree = "<group>"; };
-		30C392CF14CEBD8A001CA581 /* notation_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notation_logo.png; path = "../../../Różne pierdoły/Notation img/notation_logo.png"; sourceTree = "<group>"; };
-		30C392D114CEBE2A001CA581 /* save_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = save_button.png; path = "../../../Różne pierdoły/Notation img/save_button.png"; sourceTree = "<group>"; };
-		30C392D314CEBF61001CA581 /* cancelbuttton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancelbuttton.png; path = "../../../Różne pierdoły/Notation img/cancelbuttton.png"; sourceTree = "<group>"; };
-		30C392D514CEBF8D001CA581 /* NSText_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NSText_bg.png; path = "../../../Różne pierdoły/Notation img/NSText_bg.png"; sourceTree = "<group>"; };
-		30C392DB14CEC578001CA581 /* statusimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = statusimg.png; path = ../../../../Downloads/statusimg.png; sourceTree = "<group>"; };
 		30C392DF14CED14C001CA581 /* statusimg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusimg2.png; sourceTree = "<group>"; };
+		30C392E114CED1A8001CA581 /* statusimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusimg.png; sourceTree = "<group>"; };
+		30C392E314CED27F001CA581 /* cancelbuttton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancelbuttton.png; sourceTree = "<group>"; };
+		30C392E414CED27F001CA581 /* notation_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notation_logo.png; sourceTree = "<group>"; };
+		30C392E514CED27F001CA581 /* NSText_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NSText_bg.png; sourceTree = "<group>"; };
+		30C392E614CED27F001CA581 /* save_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save_button.png; sourceTree = "<group>"; };
+		30C392E714CED27F001CA581 /* top_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_bar.png; sourceTree = "<group>"; };
 		30C68E8714CD80DA00F646FB /* Notation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C68E8B14CD80DB00F646FB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		30C68E8E14CD80DB00F646FB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -89,13 +89,13 @@
 		30C392CC14CEB6B1001CA581 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				30C392E314CED27F001CA581 /* cancelbuttton.png */,
+				30C392E414CED27F001CA581 /* notation_logo.png */,
+				30C392E514CED27F001CA581 /* NSText_bg.png */,
+				30C392E614CED27F001CA581 /* save_button.png */,
+				30C392E714CED27F001CA581 /* top_bar.png */,
+				30C392E114CED1A8001CA581 /* statusimg.png */,
 				30C392DF14CED14C001CA581 /* statusimg2.png */,
-				30C392DB14CEC578001CA581 /* statusimg.png */,
-				30C392D514CEBF8D001CA581 /* NSText_bg.png */,
-				30C392D314CEBF61001CA581 /* cancelbuttton.png */,
-				30C392D114CEBE2A001CA581 /* save_button.png */,
-				30C392CF14CEBD8A001CA581 /* notation_logo.png */,
-				30C392CD14CEBD30001CA581 /* top_bar.png */,
 			);
 			name = img;
 			sourceTree = "<group>";
@@ -255,13 +255,13 @@
 				30C68E9614CD80DB00F646FB /* InfoPlist.strings in Resources */,
 				30C68E9C14CD80DB00F646FB /* Credits.rtf in Resources */,
 				30C68EA214CD80DB00F646FB /* MainMenu.xib in Resources */,
-				30C392CE14CEBD30001CA581 /* top_bar.png in Resources */,
-				30C392D014CEBD8A001CA581 /* notation_logo.png in Resources */,
-				30C392D214CEBE2A001CA581 /* save_button.png in Resources */,
-				30C392D414CEBF61001CA581 /* cancelbuttton.png in Resources */,
-				30C392D614CEBF8D001CA581 /* NSText_bg.png in Resources */,
-				30C392DC14CEC578001CA581 /* statusimg.png in Resources */,
 				30C392E014CED14C001CA581 /* statusimg2.png in Resources */,
+				30C392E214CED1A8001CA581 /* statusimg.png in Resources */,
+				30C392E814CED27F001CA581 /* cancelbuttton.png in Resources */,
+				30C392E914CED27F001CA581 /* notation_logo.png in Resources */,
+				30C392EA14CED27F001CA581 /* NSText_bg.png in Resources */,
+				30C392EB14CED27F001CA581 /* save_button.png in Resources */,
+				30C392EC14CED27F001CA581 /* top_bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
