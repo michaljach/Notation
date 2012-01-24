@@ -6,4 +6,7 @@ Fast & Simple Notes for OS X Statusbar.
 - Notes on the fly
 - Showing uncompleted in statusbar icon
 
+## USAGE
+Just click on menubar icon and write Your note. Hit `Enter` and BOOM!- added.
+
 Read the `LICENSE` file.
