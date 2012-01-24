@@ -8,7 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    IBOutlet NSMenu *statusMenu;
+    NSStatusItem *statusItem;
+	NSImage *statusImage;
+    NSImage *statusImage2;
+	IBOutlet NSTextField *newInput;
+}
+- (IBAction)addNewItem:(id)sender;
+- (IBAction)listener:(id)item;
+- (IBAction)showNewWindow:(id)sender;
+- (IBAction)closeWindow:(id)sender;
 
 @property (assign) IBOutlet NSWindow *window;
 
