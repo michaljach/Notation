@@ -13,8 +13,7 @@ NSInteger numberNotes = 0;
 
 @synthesize window = _window;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+-(void)applicationDidFinishLaunching:(NSNotification *)aNotification{
     // Insert code here to initialize your application
 }
 -(void)awakeFromNib{
@@ -23,14 +22,14 @@ NSInteger numberNotes = 0;
 	statusImage = [[NSImage alloc] initWithContentsOfFile: [bundle pathForResource: @"statusimg" ofType: @"png"]];
 	statusImage2 = [[NSImage alloc] initWithContentsOfFile: [bundle pathForResource: @"statusimg2" ofType: @"png"]];
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-	[statusItem setMenu:statusMenu];
+    [statusItem setMenu:statusMenu];
 	[statusItem setTitle:numberNotes_str];
 	[statusItem setImage:statusImage];
     [statusItem setAlternateImage: statusImage2];
 	[statusItem setHighlightMode:YES];
 }
 
-- (IBAction)addNewItem:(id)sender {
+-(IBAction)addNewItem:(id)sender{
     NSMenuItem *newItem = [[NSMenuItem alloc] initWithTitle:[newInput stringValue] action:@selector(listener:) keyEquivalent:@""];
 	[newItem setImage:statusImage];
 	[newItem setState:NSOffState];
@@ -40,7 +39,7 @@ NSInteger numberNotes = 0;
 	}
 	[statusMenu insertItem:newItem atIndex:numberNotes+2];
     numberNotes++;
-	NSString* conv1 = [NSString stringWithFormat:@"%d", numberNotes];
+    NSString* conv1 = [NSString stringWithFormat:@"%d", numberNotes];
 	[statusItem setTitle:conv1];
 	[newInput setStringValue:@""];
 	[_window orderOut:sender];
@@ -70,7 +69,7 @@ NSInteger numberNotes = 0;
     [newInput setAction:@selector(addNewItem:)];
 }
 
-- (IBAction)closeWindow:(id)sender {
+-(IBAction)closeWindow:(id)sender{
     [_window orderOut:sender];
 }
 @end

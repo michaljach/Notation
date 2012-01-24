@@ -13,7 +13,7 @@
 		30C392D414CEBF61001CA581 /* cancelbuttton.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392D314CEBF61001CA581 /* cancelbuttton.png */; };
 		30C392D614CEBF8D001CA581 /* NSText_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392D514CEBF8D001CA581 /* NSText_bg.png */; };
 		30C392DC14CEC578001CA581 /* statusimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392DB14CEC578001CA581 /* statusimg.png */; };
-		30C392DE14CEC621001CA581 /* statusimg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392DD14CEC621001CA581 /* statusimg2.png */; };
+		30C392E014CED14C001CA581 /* statusimg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C392DF14CED14C001CA581 /* statusimg2.png */; };
 		30C68E8C14CD80DB00F646FB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C68E8B14CD80DB00F646FB /* Cocoa.framework */; };
 		30C68E9614CD80DB00F646FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30C68E9414CD80DB00F646FB /* InfoPlist.strings */; };
 		30C68E9814CD80DB00F646FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C68E9714CD80DB00F646FB /* main.m */; };
@@ -43,7 +43,7 @@
 		30C392D314CEBF61001CA581 /* cancelbuttton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancelbuttton.png; path = "../../../Różne pierdoły/Notation img/cancelbuttton.png"; sourceTree = "<group>"; };
 		30C392D514CEBF8D001CA581 /* NSText_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NSText_bg.png; path = "../../../Różne pierdoły/Notation img/NSText_bg.png"; sourceTree = "<group>"; };
 		30C392DB14CEC578001CA581 /* statusimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = statusimg.png; path = ../../../../Downloads/statusimg.png; sourceTree = "<group>"; };
-		30C392DD14CEC621001CA581 /* statusimg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = statusimg2.png; path = ../../../../Downloads/statusimg2.png; sourceTree = "<group>"; };
+		30C392DF14CED14C001CA581 /* statusimg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusimg2.png; sourceTree = "<group>"; };
 		30C68E8714CD80DA00F646FB /* Notation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C68E8B14CD80DB00F646FB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		30C68E8E14CD80DB00F646FB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -89,7 +89,7 @@
 		30C392CC14CEB6B1001CA581 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				30C392DD14CEC621001CA581 /* statusimg2.png */,
+				30C392DF14CED14C001CA581 /* statusimg2.png */,
 				30C392DB14CEC578001CA581 /* statusimg.png */,
 				30C392D514CEBF8D001CA581 /* NSText_bg.png */,
 				30C392D314CEBF61001CA581 /* cancelbuttton.png */,
@@ -261,7 +261,7 @@
 				30C392D414CEBF61001CA581 /* cancelbuttton.png in Resources */,
 				30C392D614CEBF8D001CA581 /* NSText_bg.png in Resources */,
 				30C392DC14CEC578001CA581 /* statusimg.png in Resources */,
-				30C392DE14CEC621001CA581 /* statusimg2.png in Resources */,
+				30C392E014CED14C001CA581 /* statusimg2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
