@@ -5,3 +5,5 @@ Fast & Simple Notes for OS X Statusbar.
 
 - Notes on the fly
 - Showing uncompleted in statusbar icon
+
+Read the `LICENSE` file.
