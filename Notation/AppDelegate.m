@@ -17,7 +17,7 @@ NSInteger numberNotes = 0;
     // Insert code here to initialize your application
 }
 -(void)awakeFromNib{
-	NSString* numberNotes_str = [NSString stringWithFormat:@"%d", numberNotes];
+	NSString* numberNotes_str = [NSString stringWithFormat:@"%ld", (long)numberNotes];
 	NSBundle *bundle = [NSBundle mainBundle];
 	statusImage = [[NSImage alloc] initWithContentsOfFile: [bundle pathForResource: @"statusimg" ofType: @"png"]];
 	statusImage2 = [[NSImage alloc] initWithContentsOfFile: [bundle pathForResource: @"statusimg2" ofType: @"png"]];
@@ -39,7 +39,7 @@ NSInteger numberNotes = 0;
 	}
 	[statusMenu insertItem:newItem atIndex:numberNotes+2];
     numberNotes++;
-    NSString* conv1 = [NSString stringWithFormat:@"%d", numberNotes];
+    NSString* conv1 = [NSString stringWithFormat:@"%li", (long)numberNotes];
 	[statusItem setTitle:conv1];
 	[newInput setStringValue:@""];
 	[_window orderOut:sender];
@@ -50,14 +50,14 @@ NSInteger numberNotes = 0;
 	if([[statusMenu itemAtIndex:myIndex] state]==NSOnState){
 		[[statusMenu itemAtIndex:myIndex] setState:NSOffState];
 		numberNotes++;
-		NSString* myNewString3 = [NSString stringWithFormat:@"%d", numberNotes];
+		NSString* myNewString3 = [NSString stringWithFormat:@"%ld", (long)numberNotes];
 		[statusItem setTitle:myNewString3];
 	}
 	else
 	{
 		numberNotes--;
 		[[statusMenu itemAtIndex:myIndex] setState:NSOnState];
-		NSString* myNewString3 = [NSString stringWithFormat:@"%d", numberNotes];
+		NSString* myNewString3 = [NSString stringWithFormat:@"%ld", (long)numberNotes];
 		[statusItem setTitle:myNewString3];
 	}
 }

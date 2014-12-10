@@ -20,7 +20,6 @@
 		30C68E9C14CD80DB00F646FB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 30C68E9A14CD80DB00F646FB /* Credits.rtf */; };
 		30C68E9F14CD80DB00F646FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C68E9E14CD80DB00F646FB /* AppDelegate.m */; };
 		30C68EA214CD80DB00F646FB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C68EA014CD80DB00F646FB /* MainMenu.xib */; };
-		30C68EAA14CD80DB00F646FB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C68EA914CD80DB00F646FB /* SenTestingKit.framework */; };
 		30C68EAB14CD80DB00F646FB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C68E8B14CD80DB00F646FB /* Cocoa.framework */; };
 		30C68EB314CD80DB00F646FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30C68EB114CD80DB00F646FB /* InfoPlist.strings */; };
 		30C68EB614CD80DB00F646FB /* NotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C68EB514CD80DB00F646FB /* NotationTests.m */; };
@@ -58,7 +57,6 @@
 		30C68E9E14CD80DB00F646FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		30C68EA114CD80DB00F646FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		30C68EA814CD80DB00F646FB /* NotationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30C68EA914CD80DB00F646FB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		30C68EB014CD80DB00F646FB /* NotationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotationTests-Info.plist"; sourceTree = "<group>"; };
 		30C68EB214CD80DB00F646FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30C68EB414CD80DB00F646FB /* NotationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotationTests.h; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C68EAA14CD80DB00F646FB /* SenTestingKit.framework in Frameworks */,
 				30C68EAB14CD80DB00F646FB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				30C68E8B14CD80DB00F646FB /* Cocoa.framework */,
-				30C68EA914CD80DB00F646FB /* SenTestingKit.framework */,
 				30C68E8D14CD80DB00F646FB /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -219,7 +215,7 @@
 			name = NotationTests;
 			productName = NotationTests;
 			productReference = 30C68EA814CD80DB00F646FB /* NotationTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -227,7 +223,8 @@
 		30C68E7E14CD80DA00F646FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastTestingUpgradeCheck = 0610;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = 30C68E8114CD80DA00F646FB /* Build configuration list for PBXProject "Notation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -359,9 +356,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -375,8 +379,11 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -386,18 +393,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -405,6 +422,7 @@
 		30C68EBA14CD80DB00F646FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notation/Notation-Prefix.pch";
 				INFOPLIST_FILE = "Notation/Notation-Info.plist";
@@ -416,6 +434,7 @@
 		30C68EBB14CD80DB00F646FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notation/Notation-Prefix.pch";
 				INFOPLIST_FILE = "Notation/Notation-Info.plist";
@@ -428,13 +447,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Notation.app/Contents/MacOS/Notation";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notation/Notation-Prefix.pch";
 				INFOPLIST_FILE = "NotationTests/NotationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -442,13 +461,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Notation.app/Contents/MacOS/Notation";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notation/Notation-Prefix.pch";
 				INFOPLIST_FILE = "NotationTests/NotationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
